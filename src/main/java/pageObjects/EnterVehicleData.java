@@ -4,7 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class EnterVehicleData {
+import testBase.TestBase;
+
+public class EnterVehicleData extends TestBase {
 
 	@FindBy(id = "make")
 	WebElement dd_make;
@@ -14,6 +16,9 @@ public class EnterVehicleData {
 
 	@FindBy(xpath = "//input[@id='cylindercapacity']")
 	WebElement txt_cylindercapacity;
+	
+	@FindBy(xpath = "//input[@id='cylindercapacity']/following-sibling::span[@class='error']")
+	WebElement errmsg_cylindercapacity;
 
 	@FindBy(id = "engineperformance")
 	WebElement txt_engineperformance;
@@ -35,7 +40,14 @@ public class EnterVehicleData {
 
 	public EnterVehicleData() {
 		PageFactory.initElements(driver, this);
-
+	}
+	
+	public void enterCylinderCapacity(String cylinderCapacity) {
+		txt_cylindercapacity.sendKeys(cylinderCapacity);
+	}
+	
+	public String getErrorMessageOnCylinderCapacity() {
+		return errmsg_cylindercapacity.getText();
 	}
 
 }

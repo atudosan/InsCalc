@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage {
-	
-	WebDriver driver;
+import testBase.TestBase;
+
+public class HomePage extends TestBase {
 	
 	@FindBy(id="nav_automobile")
 	WebElement link_automobile;
@@ -23,7 +23,11 @@ public class HomePage {
 	
 	//constructor to initialize all WebElements
 	public HomePage() {
-		PageFactory.initElements(driver, this);
-		
+		PageFactory.initElements(driver, this);		
+	}
+	
+	public void clickOnMotorcycleLink() {
+		link_motorcycle.click();
+		//return new EnterVehicleData();
 	}
 }

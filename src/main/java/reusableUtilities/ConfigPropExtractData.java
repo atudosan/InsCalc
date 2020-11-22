@@ -5,14 +5,20 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.commons.lang3.StringUtils;
+
 public class ConfigPropExtractData {
-	Properties prop = new Properties();
+	static Properties prop = new Properties();
 	
-	public String getPropValueByKey(String key) throws IOException {
-		String path = System.getProperty("user.dir")+"src\\test\\resources\\config.properties";
+	public static String getPropValueByKey(String key) throws Exception {
+		String path = System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties";
 		FileInputStream fis = new FileInputStream(path);
 		prop.load(fis);
 		String value = prop.get(key).toString();
+		
+		if(StringUtils.isEmpty(value)) {
+			throw new Exception("Value is not specified for key: "+key+" in config.properties file");
+		}
 		return value;		
 	}
 

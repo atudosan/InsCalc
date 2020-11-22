@@ -6,7 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class EnterInsurantData {
+import testBase.TestBase;
+
+public class EnterInsurantData extends TestBase {
 	
 	@FindBy(id="firstname")
 	WebElement txt_firstname;

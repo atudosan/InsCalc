@@ -6,7 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class EnterProductData {
+import testBase.TestBase;
+
+public class EnterProductData extends TestBase {
 
 	@FindBy(id="startdate")
 	WebElement date_startdate;	

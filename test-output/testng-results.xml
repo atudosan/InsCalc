@@ -2,16 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-21T23:55:37 PST" name="Default suite" finished-at="2020-11-21T23:56:16 PST" duration-ms="39451">
+  <suite started-at="2020-11-22T01:29:35 PST" name="Default suite" finished-at="2020-11-22T01:30:16 PST" duration-ms="40407">
     <groups>
     </groups>
-    <test started-at="2020-11-21T23:55:37 PST" name="Default test" finished-at="2020-11-21T23:56:16 PST" duration-ms="39451">
-      <class name="uiTestCases.EndToEndTest_motorcycle">
-        <test-method signature="getTitle()[pri:0, instance:uiTestCases.EndToEndTest_motorcycle@671a5887]" started-at="2020-11-21T23:55:37 PST" name="getTitle" finished-at="2020-11-21T23:56:16 PST" duration-ms="39296" status="PASS">
+    <test started-at="2020-11-22T01:29:35 PST" name="Default test" finished-at="2020-11-22T01:30:16 PST" duration-ms="40407">
+      <class name="uiTestCases.ErrorTest_motorcycle">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:uiTestCases.ErrorTest_motorcycle@6f27a732]" started-at="2020-11-22T01:29:35 PST" name="setUp" finished-at="2020-11-22T01:30:13 PST" duration-ms="37722" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getTitle -->
-      </class> <!-- uiTestCases.EndToEndTest_motorcycle -->
+        </test-method> <!-- setUp -->
+        <test-method signature="errorMessage_CylinderCapacity()[pri:0, instance:uiTestCases.ErrorTest_motorcycle@6f27a732]" started-at="2020-11-22T01:30:13 PST" name="errorMessage_CylinderCapacity" finished-at="2020-11-22T01:30:15 PST" duration-ms="1932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorMessage_CylinderCapacity -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:uiTestCases.ErrorTest_motorcycle@6f27a732]" started-at="2020-11-22T01:30:15 PST" name="tearDown" finished-at="2020-11-22T01:30:16 PST" duration-ms="707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- uiTestCases.ErrorTest_motorcycle -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
