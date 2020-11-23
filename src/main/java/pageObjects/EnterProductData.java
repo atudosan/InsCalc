@@ -30,4 +30,14 @@ public class EnterProductData extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 	
+	public void enterProductData() throws Exception {
+		commonMethods.sendText(date_startdate, "12/05/2020");
+		commonMethods.selectDropdownOptionByVisibleText(dd_insurancesum, "100000");
+		commonMethods.selectDropdownOptionByVisibleText(dd_damageinsurance, "Full Coverage");
+	}
+	
+	public void clickOnNextBtn() {
+		commonMethods.clickOnBtn(btn_Next);
+	}
+	
 }
