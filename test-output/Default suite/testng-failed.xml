@@ -5,9 +5,9 @@
     <classes>
       <class name="uiTestCases.ErrorTest_motorcycle">
         <methods>
-          <include name="errorMessage_CylinderCapacity"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="verifyModelDropdownOptions"/>
         </methods>
       </class> <!-- uiTestCases.ErrorTest_motorcycle -->
     </classes>

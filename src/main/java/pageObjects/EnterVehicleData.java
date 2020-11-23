@@ -1,8 +1,12 @@
 package pageObjects;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import testBase.TestBase;
 
@@ -48,6 +52,11 @@ public class EnterVehicleData extends TestBase {
 	
 	public String getErrorMessageOnCylinderCapacity() {
 		return errmsg_cylindercapacity.getText();
+	}
+	
+	public List<String> getDropdownOptions_model() {
+		 return method.getDropdownOptions_model(dd_model);
+		//return actualOptions;
 	}
 
 }

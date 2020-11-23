@@ -16,7 +16,7 @@ import reusableUtilities.ConfigPropExtractData;
 
 public class TestBase extends MyObjectsRepo {
 
-	public static WebDriver driver;
+	
 
 	public void LaunchBrowserAndNavigate() throws Exception {
 
