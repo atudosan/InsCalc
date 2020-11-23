@@ -16,5 +16,5 @@ public class MyObjectsRepo {
 	public static ExtentReports extent;
 	public static HomePage homePage;
 	public static EnterVehicleData vehData;
-	public static CommonMethods method;
+	public static CommonMethods commonMethods;
 }

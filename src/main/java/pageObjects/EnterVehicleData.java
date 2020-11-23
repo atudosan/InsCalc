@@ -1,12 +1,10 @@
 package pageObjects;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
 import testBase.TestBase;
 
@@ -55,8 +53,23 @@ public class EnterVehicleData extends TestBase {
 	}
 	
 	public List<String> getDropdownOptions_model() {
-		 return method.getDropdownOptions_model(dd_model);
+		 return commonMethods.getDropdownOptions_model(dd_model);
 		//return actualOptions;
+	}
+	
+	public void enterVehicleData() throws Exception {
+		commonMethods.selectDropdownOptionByVisibleText(dd_make, "BMW");
+		commonMethods.selectDropdownOptionByVisibleText(dd_model, "Moped");	
+		commonMethods.sendText(txt_cylindercapacity, "333");
+		commonMethods.sendText(txt_engineperformance, "555");
+		commonMethods.sendText(date_dateofmanufacture, "12/12/2008");
+		commonMethods.selectDropdownOptionByVisibleText(dd_numberofseats, "2");
+		commonMethods.sendText(txt_listprice, "444");
+		commonMethods.sendText(txt_annualmilage, "888");
+	}
+	
+	public void clickOnNextBtn() {
+		commonMethods.clickOnBtn(btn_next);
 	}
 
 }
