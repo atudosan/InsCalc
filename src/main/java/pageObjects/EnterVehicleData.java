@@ -70,6 +70,7 @@ public class EnterVehicleData extends TestBase {
 	
 	public void clickOnNextBtn() {
 		commonMethods.clickOnBtn(btn_next);
+		
 	}
 
 }
