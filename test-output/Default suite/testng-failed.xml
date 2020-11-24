@@ -7,6 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="errorMessage_CylinderCapacity1"/>
           <include name="verifyModelDropdownOptions"/>
         </methods>
       </class> <!-- uiTestCases.ErrorTest_motorcycle -->

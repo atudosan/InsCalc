@@ -9,12 +9,16 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pageObjects.EnterInsurantData;
+import pageObjects.EnterProductData;
 import pageObjects.EnterVehicleData;
 import pageObjects.HomePage;
 import reusableUtilities.ConfigPropExtractData;
 
 public class TestBase extends MyObjectsRepo {
-
+	
+	
+	
 	public void LaunchBrowserAndNavigate() throws Exception {
 
 		String browser = ConfigPropExtractData.getPropValueByKey("browser");
@@ -41,8 +45,13 @@ public class TestBase extends MyObjectsRepo {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		LaunchBrowserAndNavigate();
+		//after we initilized the driver we should initialie every
+		// object of pageObjects because in their contructor they need
+		// a driver instance in order to be created
 		homePage = new HomePage();
 		vehData = new EnterVehicleData();
+		insData = new EnterInsurantData();
+		prodData = new EnterProductData();
 	}
 
 	@AfterMethod

@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="uiTestCases.ErrorTest_motorcycle">
+      <class name="uiTestCases.EndToEndTest_motorcycle">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="errorMessage_CylinderCapacity1"/>
+          <include name="insuranseCalculate"/>
         </methods>
-      </class> <!-- uiTestCases.ErrorTest_motorcycle -->
+      </class> <!-- uiTestCases.EndToEndTest_motorcycle -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

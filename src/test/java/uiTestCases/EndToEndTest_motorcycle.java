@@ -7,8 +7,14 @@ import testBase.TestBase;
 public class EndToEndTest_motorcycle extends TestBase {
 	
 	@Test
-	public void getTitle(){	
-		System.out.println(driver.getTitle());
+	public void insuranseCalculate() throws Exception{	
+		homePage.clickOnMotorcycleLink();
+		vehData.enterVehicleData();
+		vehData.clickOnNextBtn();
+		insData.enterInsuranData();
+		insData.clickOnNextBtn();
+		prodData.enterProductData();
+		prodData.clickOnNextBtn();
 	}
 
 }

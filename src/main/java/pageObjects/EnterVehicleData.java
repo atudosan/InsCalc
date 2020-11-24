@@ -28,16 +28,16 @@ public class EnterVehicleData extends TestBase {
 	@FindBy(id = "dateofmanufacture")
 	WebElement date_dateofmanufacture;
 
-	@FindBy(id = "numberofseats")
+	@FindBy(id = "numberofseatsmotorcycle")
 	WebElement dd_numberofseats;
 
 	@FindBy(id = "listprice")
 	WebElement txt_listprice;
 
-	@FindBy(id = "annualmilage")
+	@FindBy(id = "annualmileage")
 	WebElement txt_annualmilage;
 
-	@FindBy(id = "nextenterinsurancedata")
+	@FindBy(id = "nextenterinsurantdata")
 	WebElement btn_next;
 
 	public EnterVehicleData() {
@@ -53,18 +53,19 @@ public class EnterVehicleData extends TestBase {
 	}
 	
 	public List<String> getDropdownOptions_model() {
-		 return commonMethods.getDropdownOptions_model(dd_model);
-		//return actualOptions;
+		 return commonMethods.getDropdownOptions(dd_model);
+		
 	}
 	
 	public void enterVehicleData() throws Exception {
+		
 		commonMethods.selectDropdownOptionByVisibleText(dd_make, "BMW");
 		commonMethods.selectDropdownOptionByVisibleText(dd_model, "Moped");	
 		commonMethods.sendText(txt_cylindercapacity, "333");
 		commonMethods.sendText(txt_engineperformance, "555");
 		commonMethods.sendText(date_dateofmanufacture, "12/12/2008");
 		commonMethods.selectDropdownOptionByVisibleText(dd_numberofseats, "2");
-		commonMethods.sendText(txt_listprice, "444");
+		commonMethods.sendText(txt_listprice, "4440");
 		commonMethods.sendText(txt_annualmilage, "888");
 	}
 	

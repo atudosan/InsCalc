@@ -3,7 +3,6 @@ package pageObjects;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.SendKeysAction;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -20,7 +19,7 @@ public class EnterInsurantData extends TestBase {
 	@FindBy(id="birthdate")
 	WebElement date_birthdate;	
 
-	@FindBy(xpath="//input[class='Gender']/parent::label")
+	@FindBy(xpath="//input[@name='Gender']/parent::label")
 	List<WebElement> rdo_gender;
 	
 	@FindBy(id="streetaddress")
@@ -32,7 +31,7 @@ public class EnterInsurantData extends TestBase {
 	@FindBy(id="zipcode")
 	WebElement txt_zipcode;
 	
-	@FindBy(xpath="//input[class='Hobbies']/parent::label")
+	@FindBy(xpath="//input[@name='Hobbies']/parent::label")
 	List<WebElement> chk_hobbies;
 	
 	@FindBy(id="website")
@@ -55,14 +54,14 @@ public class EnterInsurantData extends TestBase {
 		commonMethods.sendText(txt_firstname, "Lion");
 		commonMethods.sendText(txt_lastname, "Adams");
 		commonMethods.sendText(date_birthdate, "02/05/1999");
-		commonMethods.selectRadioBtnValue(rdo_gender, "male");
+		commonMethods.selectRadioBtnValue(rdo_gender, "Male");
 		commonMethods.selectDropdownOptionByVisibleText(dd_country, "Canada");
 		commonMethods.sendText(txt_zipcode, "255050");
-		commonMethods.selectDropdownOptionByVisibleText(dd_occupation, "farmer");
-		commonMethods.selectCheckboxeValues(chk_hobbies, "spedding,other");
+		commonMethods.selectDropdownOptionByVisibleText(dd_occupation, "Farmer");
+		commonMethods.selectCheckboxeValues(chk_hobbies, "Spedding,Other");
 	}
 	
-	public void clickOnNextBtn(WebElement element) {
+	public void clickOnNextBtn() {
 		commonMethods.clickOnBtn(btn_Next);
 	}
 	

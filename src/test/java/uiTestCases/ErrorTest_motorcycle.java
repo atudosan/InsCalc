@@ -17,7 +17,7 @@ public class ErrorTest_motorcycle extends TestBase {
 		
 		homePage.clickOnMotorcycleLink();
 		vehData.enterCylinderCapacity("3333");
-		test.log(Status.PASS, "Cylinder capacity is filled with data 3333");
+		//test.log(Status.PASS, "Cylinder capacity is filled with data 3333");
 		String actualErrorMessage = vehData.getErrorMessageOnCylinderCapacity();
 		String expectedErrorMessage = "Must be a number between 1 and 2000";
 		Assert.assertEquals(expectedErrorMessage, actualErrorMessage, "Actual Error Message is not as Expected");
@@ -29,7 +29,7 @@ public class ErrorTest_motorcycle extends TestBase {
 		
 		homePage.clickOnMotorcycleLink();
 		vehData.enterCylinderCapacity("3333");
-		test.log(Status.PASS, "Cylinder capacity is filled with data 3333");
+		//test.log(Status.PASS, "Cylinder capacity is filled with data 3333");
 		String actualErrorMessage = vehData.getErrorMessageOnCylinderCapacity();
 		String expectedErrorMessage = "Must be a number between 1 and 3000";
 		Assert.assertEquals(expectedErrorMessage, actualErrorMessage, "Actual Error Message is not as Expected");

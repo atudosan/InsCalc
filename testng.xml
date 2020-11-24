@@ -9,7 +9,7 @@
 
 	<test name="Test">
 		<classes>
-			<class name="uiTestCases.ErrorTest_motorcycle" />
+			<class name="uiTestCases.EndToEndTest_motorcycle" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

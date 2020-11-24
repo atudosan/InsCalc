@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">ReportName</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 22, 2020 09:41:15 PM</span></a>
+<a href="#"><span class="badge badge-primary">Nov 23, 2020 01:58:27 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,7 +71,6 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
@@ -80,25 +79,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">errorMessage_CylinderCapacity</p>
+            <p class="name">insuranseCalculate</p>
             <p class="text-sm">
-              <span>21:41:27 PM</span> / <span>00:00:01:461</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>13:58:44 PM</span> / <span>00:00:34:979</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">errorMessage_CylinderCapacity</h5>
-<span class='badge badge-success'>11.22.2020 21:41:27</span>
-<span class='badge badge-danger'>11.22.2020 21:41:28</span>
-<span class='badge badge-default'>00:00:01:461</span>
+<h5 class="test-status text-fail">insuranseCalculate</h5>
+<span class='badge badge-success'>11.23.2020 13:58:44</span>
+<span class='badge badge-danger'>11.23.2020 13:59:19</span>
+<span class='badge badge-default'>00:00:34:979</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 </div>
@@ -107,78 +106,19 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:41:28 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:58:45 PM</td>
         <td>
-          Cylinder capacity is filled with data 3333
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:41:28 PM</td>
-        <td>
-          Test Case errorMessage_CylinderCapacityis Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="2"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">errorMessage_CylinderCapacity1</p>
-            <p class="text-sm">
-              <span>21:41:39 PM</span> / <span>00:00:01:598</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">errorMessage_CylinderCapacity1</h5>
-<span class='badge badge-success'>11.22.2020 21:41:39</span>
-<span class='badge badge-danger'>11.22.2020 21:41:40</span>
-<span class='badge badge-default'>00:00:01:598</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
-</div>
-</div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='C:\Users\19163\seleniumArchitecture\InsuranceCalc/Reports/Screenshots/22-11-20 21-41-40.jpeg' src="C:\Users\19163\seleniumArchitecture\InsuranceCalc/Reports/Screenshots/22-11-20 21-41-40.jpeg">
-    <div class="title">Test case failor screenshot</div>
-    </div></div>
-<div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:41:40 PM</td>
-        <td>
-          Cylinder capacity is filled with data 3333
+          Test Case insuranseCalculate is Failed
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:41:40 PM</td>
+        <td>1:58:45 PM</td>
         <td>
-          Test Case errorMessage_CylinderCapacity1is Failed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:41:40 PM</td>
-        <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: Actual Error Message is not as Expected expected [Must be a number between 1 and 2000] but found [Must be a number between 1 and 3000]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at uiTestCases.ErrorTest_motorcycle.errorMessage_CylinderCapacity1(ErrorTest_motorcycle.java:35)
+          <textarea readonly class="code-block">java.lang.NullPointerException
+	at pageObjects.EnterVehicleData.enterVehicleData(EnterVehicleData.java:62)
+	at uiTestCases.EndToEndTest_motorcycle.insuranseCalculate(EndToEndTest_motorcycle.java:12)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -211,42 +151,47 @@
           
         </td>
       </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="3"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyModelDropdownOptions</p>
-            <p class="text-sm">
-              <span>21:41:49 PM</span> / <span>00:00:04:301</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyModelDropdownOptions</h5>
-<span class='badge badge-success'>11.22.2020 21:41:49</span>
-<span class='badge badge-danger'>11.22.2020 21:41:53</span>
-<span class='badge badge-default'>00:00:04:301</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:41:53 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:59:19 PM</td>
         <td>
-          Test Case verifyModelDropdownOptionsis Passed
+          Test Case insuranseCalculate is Failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:59:19 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.RuntimeException: Unexpected result for screenshot command: null
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:304)
+	at reusableUtilities.ListenersImplementation.onTestFailure(ListenersImplementation.java:40)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:66)
+	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:220)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:656)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -267,7 +212,7 @@
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -276,12 +221,12 @@
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.lang.AssertionError</p>
+<p class="name">java.lang.RuntimeException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.AssertionError</h4>
+<h4>java.lang.RuntimeException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -295,9 +240,42 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>21:41:39 PM</td>
+<td>13:58:44 PM</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>errorMessage_CylinderCapacity1</a>
+<a href="#" class="linked" test-id='1' id='1'>insuranseCalculate</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:58:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>insuranseCalculate</a>
 </td>
 </tr>
 </tbody>
@@ -317,19 +295,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 22, 2020 09:41:15 PM</h3>
+<h3>Nov 23, 2020 01:58:27 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 22, 2020 09:41:54 PM</h3>
+<h3>Nov 23, 2020 01:59:19 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>2</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -351,12 +329,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='66%'>
-<b>2</b> tests passed
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='33%'><b>1</b> tests failed,
+<small data-tooltip='100%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -374,9 +352,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='66%'><b>4</b> events passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='33%'><b>2</b> events failed,
+<small data-tooltip='100%'><b>4</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -393,7 +371,7 @@
 </div></div>
 <script>
 var timeline = {
-"errorMessage_CylinderCapacity":1.461,"errorMessage_CylinderCapacity1":1.598,"verifyModelDropdownOptions":4.301
+"insuranseCalculate":34.979
 };
 </script>
 <div class="row">
@@ -402,7 +380,7 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 2,
+passParent: 0,
 failParent: 1,
 warningParent: 0,
 skipParent: 0,
@@ -419,8 +397,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 4,
-failEvents: 2,
+passEvents: 0,
+failEvents: 4,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0

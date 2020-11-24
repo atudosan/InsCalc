@@ -8,11 +8,13 @@ import org.openqa.selenium.support.ui.Select;
 
 import testBase.MyObjectsRepo;
 
+
 public class CommonMethods extends MyObjectsRepo {
+	
 
 	// common method to extract all the values from dropdown list for compare them
 	// with expected one
-	public List<String> getDropdownOptions_model(WebElement dropDown) {
+	public List<String> getDropdownOptions(WebElement dropDown) {
 		Select select = new Select(dropDown);
 		List<WebElement> modelsDropdown = select.getOptions();
 		List<String> actualOptions = new ArrayList<String>();
@@ -35,7 +37,7 @@ public class CommonMethods extends MyObjectsRepo {
 
 	// common method to fill a textbox with a String
 	public void sendText(WebElement element, String text) {
-		element.clear();
+		//element.clear();
 		element.sendKeys(text);
 	}
 
@@ -43,11 +45,11 @@ public class CommonMethods extends MyObjectsRepo {
 		btn.click();
 	}
 
-	public void selectRadioBtnValue(List<WebElement> element, String gender) {
+	public void selectRadioBtnValue(List<WebElement> element, String value) {
 		for (WebElement ref : element) {
-			if (ref.getText().equalsIgnoreCase(gender)) {
+			if (ref.getText().equalsIgnoreCase(value)) {
 				ref.click();
-				break;
+				//break;
 			}
 		}
 	}
@@ -57,6 +59,7 @@ public class CommonMethods extends MyObjectsRepo {
 		//we will get all the values from spreadsheet and all the values will be
 		//separated by comma. we will take this String and will split it those commas
 		String[] checksArray = values.split(",");
+		
 		for (String str : checksArray) {
 			for (WebElement ref : element) {
 				if (ref.getText().equalsIgnoreCase(str)) {
