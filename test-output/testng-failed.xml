@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="uiTestCases.ErrorTest_motorcycle">
+      <class name="uiTestCases.EndToEndTest_motorcycle">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="errorMessage_CylinderCapacity1"/>
-          <include name="verifyModelDropdownOptions"/>
+          <include name="insuranseCalculate"/>
         </methods>
-      </class> <!-- uiTestCases.ErrorTest_motorcycle -->
+      </class> <!-- uiTestCases.EndToEndTest_motorcycle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

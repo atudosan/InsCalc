@@ -13,6 +13,7 @@ import pageObjects.EnterInsurantData;
 import pageObjects.EnterProductData;
 import pageObjects.EnterVehicleData;
 import pageObjects.HomePage;
+import pageObjects.SelectPriceOption;
 import reusableUtilities.ConfigPropExtractData;
 
 public class TestBase extends MyObjectsRepo {
@@ -52,6 +53,7 @@ public class TestBase extends MyObjectsRepo {
 		vehData = new EnterVehicleData();
 		insData = new EnterInsurantData();
 		prodData = new EnterProductData();
+		priceOption = new SelectPriceOption();
 	}
 
 	@AfterMethod

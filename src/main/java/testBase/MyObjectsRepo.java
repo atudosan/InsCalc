@@ -9,6 +9,7 @@ import pageObjects.EnterInsurantData;
 import pageObjects.EnterProductData;
 import pageObjects.EnterVehicleData;
 import pageObjects.HomePage;
+import pageObjects.SelectPriceOption;
 import reusableUtilities.CommonMethods;
 
 public class MyObjectsRepo {
@@ -19,6 +20,7 @@ public class MyObjectsRepo {
 	public static HomePage homePage;
 	public static EnterVehicleData vehData;
 	public static EnterInsurantData insData;
-	public static EnterProductData prodData;	
+	public static EnterProductData prodData;
+	public static SelectPriceOption priceOption;
 	public static CommonMethods commonMethods = new CommonMethods();
 }
