@@ -1,5 +1,6 @@
 package pageObjects;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -50,15 +51,15 @@ public class EnterInsurantData extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void enterInsuranData() throws Exception {
-		commonMethods.sendText(txt_firstname, "Lion");
-		commonMethods.sendText(txt_lastname, "Adams");
-		commonMethods.sendText(date_birthdate, "02/05/1999");
-		commonMethods.selectRadioBtnValue(rdo_gender, "Male");
-		commonMethods.selectDropdownOptionByVisibleText(dd_country, "Canada");
-		commonMethods.sendText(txt_zipcode, "255050");
-		commonMethods.selectDropdownOptionByVisibleText(dd_occupation, "Farmer");
-		commonMethods.selectCheckboxeValues(chk_hobbies, "Spedding,Other");
+	public void enterInsuranData(HashMap<String, String> testData) throws Exception {
+		commonMethods.sendText(txt_firstname, testData.get("Insurant_FirstName"));
+		commonMethods.sendText(txt_lastname, testData.get("Insurant_LastName"));
+		commonMethods.sendText(date_birthdate, testData.get("Insurant_birthdate"));
+		commonMethods.selectRadioBtnValue(rdo_gender, testData.get("Insurant_gender"));
+		commonMethods.selectDropdownOptionByVisibleText(dd_country, testData.get("Insurant_country"));
+		commonMethods.sendText(txt_zipcode, "Insurant_zipcode");
+		commonMethods.selectDropdownOptionByVisibleText(dd_occupation, testData.get("Insurant_occupation"));
+		commonMethods.selectCheckboxeValues(chk_hobbies, testData.get("Insurant_Hobby"));
 	}
 	
 	public void clickOnNextBtn() {

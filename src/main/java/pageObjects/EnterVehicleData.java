@@ -1,5 +1,6 @@
 package pageObjects;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -57,16 +58,16 @@ public class EnterVehicleData extends TestBase {
 		
 	}
 	
-	public void enterVehicleData() throws Exception {
+	public void enterVehicleData(HashMap<String, String> testData) throws Exception {
 		
-		commonMethods.selectDropdownOptionByVisibleText(dd_make, "BMW");
-		commonMethods.selectDropdownOptionByVisibleText(dd_model, "Moped");	
-		commonMethods.sendText(txt_cylindercapacity, "333");
-		commonMethods.sendText(txt_engineperformance, "555");
-		commonMethods.sendText(date_dateofmanufacture, "12/12/2008");
-		commonMethods.selectDropdownOptionByVisibleText(dd_numberofseats, "2");
-		commonMethods.sendText(txt_listprice, "4440");
-		commonMethods.sendText(txt_annualmilage, "888");
+		commonMethods.selectDropdownOptionByVisibleText(dd_make, testData.get("Vehicle_Make"));
+		commonMethods.selectDropdownOptionByVisibleText(dd_model, testData.get("Vehicle_Model"));	
+		commonMethods.sendText(txt_cylindercapacity, testData.get("Vehicle_CylinderCapacity"));
+		commonMethods.sendText(txt_engineperformance, testData.get("Vehicle_Enging Performance"));
+		commonMethods.sendText(date_dateofmanufacture, testData.get("Vehicle_Date of Manufacture"));
+		commonMethods.selectDropdownOptionByVisibleText(dd_numberofseats, testData.get("Vehicle_No of Seats_motorcycle"));
+		commonMethods.sendText(txt_listprice, testData.get("Vehicle_List Price"));
+		commonMethods.sendText(txt_annualmilage, testData.get("Vehicle_Annual Mileage"));
 	}
 	
 	public void clickOnNextBtn() {

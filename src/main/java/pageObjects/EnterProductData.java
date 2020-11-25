@@ -1,5 +1,6 @@
 package pageObjects;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -30,11 +31,11 @@ public class EnterProductData extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void enterProductData() throws Exception {
-		commonMethods.sendText(date_startdate, "12/05/2021");
-		commonMethods.selectDropdownOptionByVisibleText(dd_insurancesum, " 3.000.000,00");
-		commonMethods.selectDropdownOptionByVisibleText(dd_damageinsurance, "Full Coverage");
-		commonMethods.selectCheckboxeValues(chk_optionalProducts, "Euro Protection");
+	public void enterProductData(HashMap<String, String> testData) throws Exception {
+		commonMethods.sendText(date_startdate, testData.get("Product_startdate"));
+		commonMethods.selectDropdownOptionByVisibleText(dd_insurancesum, testData.get("Product_insurancesum"));
+		commonMethods.selectDropdownOptionByVisibleText(dd_damageinsurance, testData.get("Product_damageinsurance"));
+		commonMethods.selectCheckboxeValues(chk_optionalProducts, testData.get("Product_OptionalProducts"));
 	}
 	
 	public void clickOnNextBtn() {
